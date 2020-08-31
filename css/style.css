@@ -2366,7 +2366,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
   fill: #3498db;
 }
 .header__top.base-theme-lightyellow, header .header__top.override-theme-lightyellow {
-  background-image: linear-gradient(to bottom, #fef7d0, 95%, rgba(254, 247, 208, 0.5));
+  background-image: linear-gradient(to bottom, rgb(214,234,248), 95%, rgba(198, 215, 231, 0.5));
   color: #303030;
 }
 .header__top.base-theme-lightyellow .menu__link, header .header__top.override-theme-lightyellow .menu__link {
@@ -4317,7 +4317,7 @@ ul.documents-list li a:hover {
 }
 
 .broker {
-  background: #fef7d0;
+  background: rgb(214,234,248);
 }
 .broker__title {
   opacity: 0.9;
@@ -7559,4 +7559,5 @@ body.challenge2019 .section.terms p, body.challenge2019 .section.terms li {
 
 #myName {
   font-size: 32px;
+  pointer-events: none;
 }

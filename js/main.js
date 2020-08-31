@@ -46,7 +46,7 @@
             $('.header__top').addClass('override-theme-black');
           } else if (bgColor == 'rgb(251, 251, 251)') {
             $('.header__top').addClass('override-theme-gray');
-          } else if (bgColor == 'rgb(255, 247, 204)' || bgColor == 'rgb(254, 247, 208)') {
+          } else if (bgColor == 'rgb(214, 234, 248)' || bgColor == 'rgb(254, 247, 208)') {
             $('.header__top').addClass('override-theme-lightyellow');
           } else if (bgColor == 'rgb(255, 215, 0)') {
             $('.header__top').addClass('override-theme-yellow');
