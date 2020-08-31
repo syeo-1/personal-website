@@ -4334,14 +4334,14 @@ ul.documents-list li a:hover {
 .broker__desc {
   opacity: 0.9;
   font-family: Carnas;
-  font-size: 16px;
+  font-size: 36px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  max-width: 715px;
+  /* max-width: 715px; */
 }
 .broker__desc a {
   color: #ffa800;
@@ -7561,4 +7561,13 @@ body.challenge2019 .section.terms p, body.challenge2019 .section.terms li {
 #myName {
   font-size: 32px;
   pointer-events: none;
+}
+
+#social {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  display: block;
+  /* margin: 0 auto; */
+  font-size: 24px;
 }
