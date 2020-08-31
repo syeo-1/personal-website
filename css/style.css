@@ -4318,6 +4318,7 @@ ul.documents-list li a:hover {
 
 .broker {
   background: rgb(214,234,248);
+  height: 900px;
 }
 .broker__title {
   opacity: 0.9;
