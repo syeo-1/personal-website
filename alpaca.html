@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Alpaca - Commission-Free API First Stock Brokerage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#3498db">
+  <meta name="apple-mobile-web-app-title" content="Alpaca - Commission-Free API First Stock Brokerage">
+  <meta name="application-name" content="Alpaca - Commission-Free API First Stock Brokerage">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#3498db">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Alpaca Stock Trading API is built for algorithmic trading and building apps for commission-free">
+  <meta property="og:description" content="Alpaca Stock Trading API is built for algorithmic trading and building apps for commission-free">
+  <meta property="og:image"
+    content="https://s3.amazonaws.com/marketing.alpaca.markets/social/banners/alpaca-landing.png">
+  <meta property="og:locale" content="en">
+  <meta property="og:site_name" content="Alpaca">
+  <meta property="og:title" content="Alpaca - Commission-Free API First Stock Brokerage">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alpaca.markets">
+  <meta property="article:section" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" content="alpaca.markets">
+  <meta name="twitter:url" content="https://alpaca.markets">
+  <meta name="twitter:site" content="@AlpacaHQ">
+  <meta name="twitter:creator" content="@AlpacaHQ">
+  <meta name="twitter:title" content="Alpaca - Commission-Free API First Stock Brokerage">
+  <meta name="twitter:description" content="Alpaca Stock Trading API is built for algorithmic trading and building apps for commission-free">
+  <meta name="twitter:image:src"
+    content="https://s3.amazonaws.com/marketing.alpaca.markets/social/banners/alpaca-landing-twitter.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://files.alpaca.markets/webassets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://files.alpaca.markets/webassets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://files.alpaca.markets/webassets/favicon-16x16.png">
+  <link rel="mask-icon" href="https://files.alpaca.markets/webassets/safari-pinned-tab.svg" color="#3498db">
+  <link rel="shortcut icon" href="https://files.alpaca.markets/webassets/favicon.ico">
+  <meta name="msapplication-TileColor" content="#fbfbfb">
+  <meta name="msapplication-config" content="https://files.alpaca.markets/webassets/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://files.alpaca.markets/fonts/carnas/stylesheet.css">
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/style.css?2d7ff2d40a6712e6b20af4b40a1325a7" rel="stylesheet">
+
+  <script src="js/code-snippet.js?v=2"></script>
+  <!-- Reddit Conversion Pixel -->
+  <script>
+    var now = Date.now(); var i = new Image(); i.src = "https://alb.reddit.com/snoo.gif?q=CAAHAAABAAoACQAAABfdxKrRAA==&s=bsWAEN9dDKVpVjcpl6-5Qys8APPN4X7PaN6ArKnBA5M=&ts=" + now;
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://alb.reddit.com/snoo.gif?q=CAAHAAABAAoACQAAABfdxKrRAA==&s=bsWAEN9dDKVpVjcpl6-5Qys8APPN4X7PaN6ArKnBA5M=" />
+  </noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Reddit Conversion Pixel -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113069056-7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // consolidated
+    gtag('config', 'UA-113069056-7');
+    // home page only
+    gtag('config', 'UA-113069056-2');
+    // ads
+    gtag('config', 'AW-835481437');
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '319735558820291');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=319735558820291&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body class="top">
+  <!-- Begin header -->
+  <div class="wrapper">
+
+    <div class="animation">
+      <img class="animation__triangle t1" src="img/triangle.png"></img>
+      <img class="animation__triangle t2" src="img/triangle.png"></img>
+      <img class="animation__triangle t3" src="img/triangle.png"></img>
+      <img class="animation__triangle t4" src="img/triangle.png"></img>
+      <img class="animation__triangle t5" src="img/triangle.png"></img>
+      <img class="animation__triangle t6" src="img/triangle.png"></img>
+      <img class="animation__triangle t7" src="img/triangle.png"></img>
+      <img class="animation__triangle t8" src="img/triangle.png"></img>
+      <img class="animation__triangle t9" src="img/triangle.png"></img>
+      <img class="animation__triangle t10" src="img/triangle.png"></img>
+      <img class="animation__triangle t11" src="img/triangle.png"></img>
+      <img class="animation__triangle t12" src="img/triangle.png"></img>
+    </div>
+
+    <header class="header">
+      
+      <div class="header__top base-theme-black">
+  <div class="container headercontainer">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-6 col-lg-3">
+        <span class="logo" style="margin-top: 40px">
+          <h2 class="menu__link" id="myName">Sean Yeo</h2>
+        </span>
+      </div>
+      <div class="d-lg-none col-6">
+        <div class="header__top-btn">
+          <button type="button" class="js-mobile-menu-btn mobile-menu-btn">
+            <svg width="44" height="32" viewBox="0 0 44 32" fill="none">
+              <path
+                d="M7 1C3.68629 1 1 3.68629 1 7V25C1 28.3137 3.68629 31 7 31H37C40.3137 31 43 28.3137 43 25V7C43 3.68629 40.3137 1 37 1H7Z"
+                stroke="white" stroke-width="2" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10H32V12H12V10Z" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15H32V17H12V15Z" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 20H32V22H12V20Z" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9 header__top-menu-container">
+        <div class="header__menu">
+          <nav class="menu">
+
+            <a href="/algotrading" class="menu__link">About</a>
+            <a href="/integrations" class="menu__link">Projects</a>
+
+            <!-- <a href="/partnerships" class="menu__link">Work with us</a>
+            <a href="/community" class="menu__link">Community</a>
+
+            <a href="https://alpaca.markets/docs/" class="menu__link">Docs</a>
+            <a href="https://app.alpaca.markets/login" class="menu__link">Log in</a> -->
+
+          </nav>
+          <a href="https://app.alpaca.markets/signup" class="btn header__menu-btn">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-container">
+            <h1>Life is complicated. Let's make it simpler, together.</h1>
+            <!-- <p>Trade with algorithms, connect with apps, build services — all with commission-free stock trading API</p>
+            <a href="https://app.alpaca.markets/signup" class="btn header__bottom-btn">Sign up for free</a> -->
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- End header -->
+  <!-- Begin main -->
+  <main class="main">
+    <!-- <section class="section api">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-lg-7">
+                        <h2 class="title api__title">Commission-Free<br>Stock Trading API</h2>
+                        <p class="section__desc">With Alpaca Securities LLC’s commission-free API, you can run algorithmic trading & portfolio management bots and build your own mobile app with ease.</p>
+                        <a href="https://docs.alpaca.markets/api-documentation" target="_blank" class="section__link">Learn More</a>
+                        <p class="api__note">
+                            Commission-Free trading means that there are no commission charges for Alpaca self-directed
+                            individual cash brokerage accounts that trade U.S. listed securities through an API. <a href="https://support.alpaca.markets/hc/en-us/articles/360010814292-Regulatory-Fees-" target="_blank">Relevant SEC and FINRA fees may apply.</a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4" data-aos="fade-left" data-once="true"><img class="api__img" src="img/currency.png" alt="Commission-Free Stock Trading"></div>
+                </div>
+            </div>
+        </section>
+         -->
+    <section class="section broker">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-lg-8 order-1 order-lg-2">
+            <h3 class="title broker__title">Registered securities broker</h3>
+            <p class="section__desc broker__desc">Alpaca Securities LLC is a member of Financial Industry Regulatory
+              Authority, Inc. (<a href="http://www.finra.org/" target="_blank">FINRA</a>). <br> You can check the
+              background of Alpaca Securities on <a href="https://brokercheck.finra.org/firm/summary/288202"
+                target="_blank">FINRA’s BrokerCheck</a>. <br> Alpaca Securities is also a member of SIPC - securities in
+              your account are protected up to $500,000. <br> For details, please visit <a href="https://www.sipc.org/"
+                target="_blank">www.sipc.org</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section try">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="try__grid">
+                            <h3 class="title try__title">Built For Makers<br>In Open source & Community</h3>
+                            <p class="try__desc">We truly believe open source changes the financial systems and how we interact with them. Alpaca grows with our community and knowledges we build together.</p>
+                            <div class="try__info">
+                                <div class="try__info__snippet">
+                                    <script type="text/code-snippet">import alpaca_trade_api as tradeapi
+api = tradeapi.REST('AKR09R521SWTPGN5YAUI',
+                    'ijRiw9bHL1HuLpD0k9uxfW020DVJhayK5rpToN5v')
+order = api.submit_order(
+    symbol='ALPACA',
+    qty=15,
+    type='limit',
+    side='buy',
+    limit_price=25.34,
+    time_in_force='day',
+)</script>
+                                </div>
+                                <span class="try__cta">
+                                    <a href="https://app.alpaca.markets/signup" class="btn try__btn">Try API</a>
+                                </span>
+                            </div>
+                            <p class="try__note">Technology and services are offered by AlpacaDB, Inc.<br>Securities are offered through Alpaca Securities LLC </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    <!-- End main -->
+    <!-- Begin footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-sm-12 col-lg-8 col-xl-6">
+        <nav class="menu footer__menu">
+          <div class="menu__col">
+            <p class="menu__title">Developers</p>
+            <a href="https://alpaca.markets/docs/" target="_blank"
+              class="menu__link footer__menu-link">API Docs</a>
+            <a href="https://alpaca.markets/slack" target="_blank" class="menu__link footer__menu-link">Slack</a>
+            <a href="https://forum.alpaca.markets/" target="_blank" class="menu__link footer__menu-link">Forum</a>
+            <a href="https://alpaca.markets/learn/" target="_blank" class="menu__link footer__menu-link">Resources</a>
+            <a href="https://github.com/alpacahq/" target="_blank" class="menu__link footer__menu-link">GitHub</a>
+            <a href="http://status.alpaca.markets/" target="_blank" class="menu__link footer__menu-link">API Status</a>
+          </div>
+          <div class="menu__col">
+            <p class="menu__title">About Us</p>
+            <a href="https://techcrunch.com/2019/11/08/alpaca-stock-trading-api/" target="_blank"
+              class="menu__link footer__menu-link">Story</a>
+            <a href="https://eepurl.com/g0K5k9" target="_blank" class="menu__link footer__menu-link">Newsletter</a>
+            <a href="https://alpaca.markets/blog/" target="_blank" class="menu__link footer__menu-link">Blog</a>
+            <a href="mailto:info@alpaca.markets" target="_blank" class="menu__link footer__menu-link">Contact</a>
+            <a href="https://angel.co/alpaca/jobs" target="_blank" class="menu__link footer__menu-link">Careers</a>
+          </div>
+          <!-- <div class="menu__col">
+            <p class="menu__title">Community</p>
+            <a href="https://medium.com/@AlpacaHQ" target="_blank" class="menu__link footer__menu-link">Medium</a>
+            <a href="https://alpaca.markets/slack" target="_blank" class="menu__link footer__menu-link">Slack</a>
+            <a href="https://eepurl.com/g0K5k9" target="_blank" class="menu__link footer__menu-link">Newsletter</a>
+            <a href="https://alpaca.markets/learn/" target="_blank" class="menu__link footer__menu-link">Resources</a>
+            <a href="" target="_blank" class="menu__link footer__menu-link">Shop</a>
+          </div> -->
+          <div class="menu__col">
+            <p class="menu__title">Documents</p>
+            <a href="https://files.alpaca.markets/disclosures/alpaca_terms_and_conditions.pdf" target="_blank"
+              class="menu__link footer__menu-link">Terms & Conditions</a>
+            <a href="/disclosures" target="_blank" class="menu__link footer__menu-link">Important Disclosures</a>
+            <a href="https://files.alpaca.markets/disclosures/alpaca_business_continuity_plan_summary.pdf"
+              target="_blank" class="menu__link footer__menu-link">Business Continuity Plan</a>
+            <a href="https://files.alpaca.markets/disclosures/privacy_notice.pdf" target="_blank"
+              class="menu__link footer__menu-link">Privacy Notice</a>
+            <a href="https://files.alpaca.markets/disclosures/alpaca_customer_agreement_v20200403.pdf" target="_blank"
+              class="menu__link footer__menu-link">Customer Agreement</a>
+            <!-- <a href="https://support.alpaca.markets/hc/en-us/" target="_blank"
+              class="menu__link footer__menu-link">Securities FAQ</a> -->
+          </div>
+        </nav>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-3">
+        <div class="social footer__social">
+          <a href="https://alpaca.markets/slack" target="_blank" rel="noopener noreferrer" class="social__item">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.9718 9.13776C17.7818 8.87477 18.6597 9.30318 18.9227 10.1091C19.1856 10.9151 18.7573 11.7931 17.9515 12.0476L16.0261 12.6881L16.6919 14.6817C16.9506 15.4919 16.5265 16.3657 15.7165 16.6287C14.8131 16.8875 14.0158 16.3742 13.7656 15.6574L13.0998 13.6637L9.13021 14.9914L9.79604 16.985C10.0547 17.7952 9.63064 18.669 8.82061 18.932C7.91728 19.1907 7.11997 18.6775 6.86975 17.9606L6.20391 15.967C5.80795 16.0987 5.48367 16.2081 5.21587 16.2985C4.17283 16.6504 3.98633 16.7134 3.75686 16.6796C3.14191 16.6542 2.54393 16.2512 2.33188 15.6361C2.07318 14.8302 2.50152 13.9522 3.30731 13.6892L5.23272 13.0487L3.9477 9.23107C3.55174 9.36279 3.22747 9.47221 2.95967 9.56257C1.91662 9.91451 1.73011 9.97744 1.50064 9.94369C0.885699 9.91824 0.287717 9.51527 0.0756672 8.90022C-0.183034 8.09004 0.241066 7.21623 1.0511 6.95324L2.97227 6.31698L2.30643 4.32335C2.04773 3.51317 2.47183 2.63937 3.28186 2.37638C4.0919 2.11339 4.96978 2.5418 5.23272 3.34774L5.89856 5.34137L9.85966 4.01794L9.19382 2.02431C8.93512 1.21413 9.35922 0.340327 10.1693 0.0773372C10.9793 -0.185653 11.8572 0.242766 12.1201 1.0487L12.7859 3.04233L14.7114 2.40183C15.5214 2.13884 16.3993 2.56726 16.6622 3.37319C16.9209 4.18337 16.4968 5.05717 15.6868 5.32016L13.7614 5.96067L15.0464 9.77826L16.9718 9.13776ZM6.86127 8.28516L8.14629 12.1112L12.1116 10.7836L10.8266 6.95749L6.86127 8.28516Z"
+                fill="#454545" />
+            </svg>
+          </a>
+          <a href="https://twitter.com/AlpacaHQ" target="_blank" rel="noopener noreferrer" class="social__item">
+            <svg width="23" height="19" viewBox="0 0 23 19" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M20.2433 4.52581C20.2576 4.72443 20.2576 4.92309 20.2576 5.1217C20.2576 11.1798 15.6049 18.1601 7.10091 18.1601C4.48101 18.1601 2.04725 17.4081 0 16.1029C0.372239 16.1454 0.730111 16.1596 1.11667 16.1596C3.27841 16.1596 5.26841 15.4361 6.85753 14.2018C4.8246 14.1592 3.12095 12.8397 2.53397 11.0237C2.82032 11.0663 3.10663 11.0946 3.4073 11.0946C3.82246 11.0946 4.23767 11.0379 4.62418 10.9386C2.50537 10.5129 0.916209 8.66858 0.916209 6.44114V6.38441C1.53179 6.72491 2.24767 6.93772 3.00638 6.96607C1.76085 6.14317 0.944852 4.73862 0.944852 3.1496C0.944852 2.29837 1.17387 1.51805 1.57475 0.837044C3.85106 3.6178 7.27269 5.43378 11.1094 5.63244C11.0379 5.29193 10.9949 4.93728 10.9949 4.58258C10.9949 2.05717 13.0565 0 15.6191 0C16.9505 0 18.1531 0.553313 18.9977 1.44713C20.0428 1.24851 21.0449 0.86543 21.9326 0.340504C21.589 1.40459 20.8588 2.29841 19.8997 2.86587C20.8302 2.76661 21.7322 2.51118 22.5625 2.15652C21.9327 3.06449 21.1452 3.87315 20.2433 4.52581Z"
+                fill="#454545" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/alpacahq" target="_blank" rel="noopener noreferrer"
+            class="social__item">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19 1.04754V17.9482C19 18.5292 18.5292 18.9958 17.9525 18.9958H13.1092V11.6417H15.5775L15.9464 8.77478H13.1049V6.94263C13.1049 6.11138 13.3339 5.54732 14.5257 5.54732H16.044V2.98147C15.781 2.94754 14.8819 2.86696 13.8301 2.86696C11.6417 2.86696 10.1404 4.2029 10.1404 6.65848V8.77478H7.66362V11.6417H10.1404V19H1.04754C0.470759 19 0 18.5292 0 17.9525V1.04754C0 0.470759 0.470759 0 1.04754 0H17.9482C18.5292 0 19 0.470759 19 1.04754Z"
+                fill="#454545" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/9300556/" target="_blank" rel="noopener noreferrer"
+            class="social__item">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.28119 4.5846C1.02187 4.5846 0 3.54129 0 2.2817C0 1.0221 1.02187 0 2.28119 0C3.5405 0 4.56237 1.0221 4.56237 2.2817C4.56237 3.54129 3.5405 4.5846 2.28119 4.5846ZM4.25285 19H0.313769V6.31496H4.25285V19ZM15.0652 19H18.9958H19V12.0319C19 8.6221 18.2665 5.99687 14.2807 5.99687C12.3642 5.99687 11.0794 7.04866 10.5537 8.04531H10.4985V6.31496H6.7206V19H10.6554V12.719C10.6554 11.065 10.9692 9.46607 13.0172 9.46607C15.0355 9.46607 15.0652 11.3533 15.0652 12.825V19Z"
+                fill="#454545" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9 col-xl-7" id="disclosures">
+        <div class="disclosureLogo">
+          <a href="/">
+          <svg width="90px" height="25px" viewBox="0 0 151 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+            <title>Alpaca</title>
+            <desc>http://alpaca.markets/</desc>
+            <defs>
+              <circle id="path-1" cx="20" cy="20" r="20"></circle>
+            </defs>
+            <g id="Logos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Horizontal-Lock-up" transform="translate(-175.000000, -349.000000)">
+                <g id="Logo" transform="translate(175.000000, 347.000000)">
+                  <g transform="translate(50.000000, 0.000000)" fill="#373737" id="AlpacaLogoText">
+                    <path
+                      d="M4.298,34.102 C4.91,34.102 5.08,33.796 5.318,33.048 L7.256,27.336 L15.96,27.336 L17.932,33.048 C18.17,33.796 18.408,34.102 19.02,34.102 L19.357965,34.1016776 C20.1639111,34.0995822 21.3818667,34.0838667 21.706,33.966 C21.978,33.83 22.114,33.592 22.114,33.32 C22.114,32.98 22.012,32.64 21.876,32.266 L15.042,12.308 C14.464,10.608 14.124,9.86 12.288,9.86 L11.438,9.86 C9.432,9.86 8.956,10.676 8.378,12.376 L1.408,32.334 C1.272,32.674 1.17,33.048 1.17,33.354 C1.17,33.592 1.238,33.864 1.578,33.966 C1.952,34.068 3.72,34.102 4.298,34.102 Z M15.042,23.97 L8.242,23.97 C10.35,17.578 11.064,15.47 11.676,13.328 C12.322,15.47 12.934,17.51 15.042,23.97 Z M30.308,34.17 C30.92,34.17 31.192,34 31.294,33.524 C31.362,33.218 31.43,32.504 31.43,31.994 C31.43,31.552 31.226,31.28 30.784,31.212 C29.798,31.042 29.118,30.736 28.846,30.26 C28.608,29.818 28.506,29.24 28.506,28.22 L28.506,9.452 C28.506,8.874 28.37,8.568 27.758,8.568 L25.548,8.568 C24.936,8.568 24.732,8.908 24.732,9.452 L24.732,28.696 C24.732,30.396 24.936,31.518 25.378,32.232 C26.126,33.422 27.418,34.17 30.308,34.17 Z M37.244,41.956 C37.856,41.956 38.196,41.752 38.196,41.072 L38.196,33.898 C38.944,34.272 40.406,34.442 41.46,34.442 C47.036,34.442 49.722,32.674 49.722,25.16 C49.722,18.496 47.546,16.558 42.582,16.558 C40.1,16.558 37.074,17.102 35.714,17.714 C35.204,17.952 34.762,18.258 34.592,18.7 C34.456,19.04 34.422,19.584 34.422,20.06 L34.422,41.072 C34.422,41.786 34.66,41.956 35.204,41.956 L37.244,41.956 Z M41.154,31.178 C40.27,31.178 39.216,31.042 38.706,30.804 C38.332,30.668 38.196,30.43 38.196,29.716 L38.196,21.726 C38.196,21.352 38.196,21.046 38.298,20.842 C38.366,20.638 38.57,20.468 38.842,20.332 C39.692,19.958 41.052,19.754 42.174,19.754 C45.2,19.754 45.914,21.352 45.914,25.194 C45.914,29.852 44.996,31.178 41.154,31.178 Z M59.072,34.442 C61.418,34.442 64.342,34 65.668,33.456 C66.212,33.252 66.518,32.98 66.756,32.674 C67.062,32.3 67.13,31.756 67.13,31.144 L67.13,22.338 C67.13,20.026 66.858,18.7 65.974,17.85 C65.022,16.898 63.492,16.524 60.568,16.524 C58.8,16.524 56.59,16.796 54.856,17.306 C54.448,17.442 54.176,17.68 54.176,18.19 C54.176,18.496 54.312,19.346 54.448,19.856 C54.55,20.196 54.754,20.4 55.094,20.4 C55.332,20.4 56.012,20.264 56.454,20.196 C57.644,19.958 58.936,19.822 60.024,19.822 C62.268,19.822 62.914,20.264 63.186,20.978 C63.356,21.42 63.39,22.168 63.39,22.814 L63.39,23.936 C62.506,23.834 61.146,23.8 60.092,23.8 C57.848,23.8 55.808,24.14 54.72,24.82 C53.394,25.67 52.816,26.928 52.816,28.968 C52.816,31.892 53.87,34.442 59.072,34.442 Z M59.548,31.484 C56.998,31.484 56.42,30.43 56.42,28.866 C56.42,27.914 56.658,27.404 57.168,27.098 C57.78,26.69 58.834,26.52 60.534,26.52 C61.486,26.52 62.676,26.588 63.39,26.656 L63.39,29.308 C63.39,29.75 63.356,30.158 63.254,30.464 C63.186,30.702 62.982,30.906 62.676,31.042 C62.064,31.28 61.01,31.484 59.548,31.484 Z M78.69,34.442 C80.322,34.442 82.124,34.272 83.62,33.728 C84.028,33.592 84.198,33.354 84.198,32.912 C84.198,32.572 83.994,31.756 83.858,31.246 C83.756,30.94 83.552,30.77 83.28,30.77 C83.008,30.77 82.566,30.872 82.294,30.94 C81.308,31.144 80.39,31.246 79.098,31.246 C75.8,31.246 74.984,29.308 74.984,25.466 C74.984,21.998 75.596,19.788 79.37,19.788 C80.424,19.788 81.274,19.89 81.954,20.026 C82.26,20.06 82.702,20.162 82.974,20.162 C83.28,20.162 83.484,19.992 83.586,19.652 C83.722,19.142 83.926,18.054 83.926,17.714 C83.926,17.374 83.756,17.102 83.348,16.966 C82.294,16.66 80.832,16.524 79.336,16.524 C73.318,16.524 71.176,19.448 71.176,25.772 C71.176,32.402 73.896,34.442 78.69,34.442 Z M92.528,34.442 C94.874,34.442 97.798,34 99.124,33.456 C99.668,33.252 99.974,32.98 100.212,32.674 C100.518,32.3 100.586,31.756 100.586,31.144 L100.586,22.338 C100.586,20.026 100.314,18.7 99.43,17.85 C98.478,16.898 96.948,16.524 94.024,16.524 C92.256,16.524 90.046,16.796 88.312,17.306 C87.904,17.442 87.632,17.68 87.632,18.19 C87.632,18.496 87.768,19.346 87.904,19.856 C88.006,20.196 88.21,20.4 88.55,20.4 C88.788,20.4 89.468,20.264 89.91,20.196 C91.1,19.958 92.392,19.822 93.48,19.822 C95.724,19.822 96.37,20.264 96.642,20.978 C96.812,21.42 96.846,22.168 96.846,22.814 L96.846,23.936 C95.962,23.834 94.602,23.8 93.548,23.8 C91.304,23.8 89.264,24.14 88.176,24.82 C86.85,25.67 86.272,26.928 86.272,28.968 C86.272,31.892 87.326,34.442 92.528,34.442 Z M93.004,31.484 C90.454,31.484 89.876,30.43 89.876,28.866 C89.876,27.914 90.114,27.404 90.624,27.098 C91.236,26.69 92.29,26.52 93.99,26.52 C94.942,26.52 96.132,26.588 96.846,26.656 L96.846,29.308 C96.846,29.75 96.812,30.158 96.71,30.464 C96.642,30.702 96.438,30.906 96.132,31.042 C95.52,31.28 94.466,31.484 93.004,31.484 Z"
+                      fill-rule="nonzero"></path>
+                  </g>
+                  <g id="Group-2" transform="translate(0.000000, 2.000000)">
+                    <g id="Combined-Shape-Copy-6">
+                      <g id="Combined-Shape">
+                        <mask id="mask-2" fill="white">
+                          <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FCD700" xlink:href="#path-1"></use>
+                        <path
+                          d="M20.4766012,6.05633803 C21.377494,6.35611754 21.9561478,6.69786445 22.2125627,7.08157877 C22.3060314,7.22145079 22.3894965,7.36977393 22.4640188,7.52264225 C23.0249463,8.67327824 23.079218,10.0814235 23.079218,10.0814235 C24.4811563,10.9974167 26.029309,12.473575 26.4025859,15.5174908 C26.4025859,17.4864838 27.0422535,40.7042254 27.0422535,40.7042254 L15.8411785,40.7042254 L15.8355833,19.3329548 C10.8333297,19.7521978 10.9864248,15.0471636 10.9864248,15.0471636 C12.2112168,14.0902849 13.2450388,12.9582112 14.0878908,11.6509426 C15.276137,9.80796567 18.4898052,9.19361473 18.4898052,9.19361473 L17.7243296,6.84021682 C19.3584909,6.47381954 20.4766012,9.19361473 20.4766012,9.19361473 L20.4766012,6.05633803 Z"
+                          fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                      </g>
+                      <ellipse id="Oval" fill="#D8D8D8" cx="20.4929577" cy="7.67605634" rx="1" ry="1.61971831">
+                      </ellipse>
+                      <path
+                        d="M11.0440278,15.2375256 C11.1218144,15.2375256 11.2676056,15.2806156 11.2676056,15.0704225 C11.2676056,14.8602295 11.279935,14.8746083 11.2047179,14.8716972 C11.0375719,14.9942833 10.9859155,14.9781176 10.9859155,15.0704225 C10.9859155,15.1627275 10.9662413,15.2375256 11.0440278,15.2375256 Z"
+                        id="Oval" fill="#D8D8D8"></path>
+                      <path
+                        d="M16.8539133,8.02433229 C16.8539133,8.21879876 17.4214396,8.37644497 18.1215189,8.37644497 C18.8215981,8.37644497 19.3891245,8.21879876 19.3891245,8.02433229 C19.3891245,7.82986583 18.8215981,7.67221962 18.1215189,7.67221962 C17.4214396,7.67221962 16.8539133,7.82986583 16.8539133,8.02433229 Z"
+                        id="Oval" fill="#D8D8D8"
+                        transform="translate(18.121519, 8.024332) rotate(71.000000) translate(-18.121519, -8.024332) ">
+                      </path>
+                      <path
+                        d="M15.915493,14.1323944 L17.128169,14.1323944 C17.7126761,14.1323944 17.8802817,13.3802817 17.8802817,13.3802817 L16.584507,13.3802817 C15.9985915,13.3802817 15.915493,14.1323944 15.915493,14.1323944 Z"
+                        id="Path" fill="#D8D8D8" fill-rule="nonzero"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          </a>
+        </div>
+        © 2020 Alpaca Securities LLC All rights reserved.
+        <br />
+        © 2020 AlpacaDB, Inc. All rights reserved.
+        <br /><br />
+        Brokerage services are provided by Alpaca Securities LLC ("Alpaca"), member <a href="https://www.finra.org/"
+          target="_blank">FINRA</a>/<a href="https://www.sipc.org/" target="_blank">SIPC</a>, a wholly-owned subsidiary
+        of AlpacaDB, Inc. Technology and services are offered by AlpacaDB, Inc.
+        <br /><br />
+        This is not an offer, solicitation of an offer, or advice to buy or sell securities, or open a brokerage account
+        in any jurisdiction where Alpaca is not registered (Alpaca is registered only in the United States).
+        <br /><br />
+        <span id="openDisclosure" class='disclosureContainer'><a class="disclosure-exclamation"
+            id="disclosureExclamation" href="javascript:void(0);">!</a>&nbsp;&nbsp;View Important Disclosures</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="disclosureComissionsModal" class="modal">
+    <div class="modal-content disclosure-modal-content">
+      <span class='close' id="close2">
+        <img src='../img/x.png'>
+        <!-- <a href="javascript:void(0);">&times;</a> -->
+      </span>
+      <h1>Commissions Disclosure</h1>
+      <div class="disclosureModal__body">
+        <div class="footer__description">
+          <p>
+            No minimums. Commission-Free trading means that there are no commission charges for Alpaca self-directed
+            individual cash brokerage accounts that trade U.S. listed securities through an API. <a target="_blank"
+              href='https://alpaca.markets/learn/regulatory-fees/'>Relevant SEC and
+              FINRA fees may apply.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="disclosureModal" class="modal">
+    <div class="modal-content disclosure-modal-content">
+      <span class='close' id="close"><img src='../img/x.png'></span>
+      <h1>Disclosures</h1>
+      <div class="disclosureModal__body">
+        <div class="footer__description">
+          <p>Brokerage services are provided by Alpaca Securities LLC ("Alpaca"), member <a
+              href="https://www.finra.org/" target="_blank">FINRA</a>/<a href="https://www.sipc.org/"
+              target="_blank">SIPC</a>, a
+            wholly-owned subsidiary of AlpacaDB, Inc.</p>
+          <p>Technology and services are offered by AlpacaDB, Inc.</p>
+          <p>Brokerage services are provided to customers who can write automated investment code and self direct their
+            own investments. Alpaca brokerage services are only provided to customers who agree to electronically sign
+            agreements and agree to receive messages, confirmations, and statements electronically. <a
+              href="https://alpaca.markets/learn/alpaca-securities-account-right-for-me/"
+              rel="noopener noreferrer" target="_blank">Is Alpaca right for me?</a></p>
+          <p>This is not an offer, solicitation of an offer, or advice to buy or sell securities, or open
+            a brokerage account in any jurisdiction where Alpaca is not registered (Alpaca is
+            registered only in the United States).</p>
+          <p>The Paper Trading API is offered by AlpacaDB, Inc. and does not require real money or permit
+            a user to transact in real securities in the market. Providing use of the Paper Trading API
+            is not an offer or solicitation to buy or sell securities, securities derivative or futures
+            products of any kind, or any type of trading or investment advice, recommendation or strategy,
+            given or in any manner endorsed by AlpacaDB, Inc. or any AlpacaDB, Inc. affiliate and the
+            information made available through the Paper Trading API is not an offer or solicitation of
+            any kind in any jurisdiction where AlpacaDB, Inc. or any AlpacaDB, Inc. affiliate is not
+            authorized to do business.</p>
+          <p>You should know that the use or granting of any third party access to your account information
+            or place transactions in your account at your direction is solely at your risk. Alpaca does
+            not warrant against loss of use or any direct, indirect or consequential damages or losses
+            to you caused by your assent, expressed or implied, to a third party accessing your account
+            or information, including access provided through any other third party apps, systems, or sites. </p>
+          <p>Market prices, data and other information available through Alpaca are not warranted as to
+            completeness or accuracy and are subject to change without notice. <em>System response and
+              account access times may vary due to a variety of factors, including trading volumes,
+              market conditions, system performance, and other factors.</em> A more complete description of
+            the impact these factors may have can be found in our
+            <a href="https://alpaca.markets/learn/risks-of-automated-trading-systems/"
+              target="_blank">risks of automated trading systems section</a>. </p>
+          <p>All investments involve risk and the past performance of a security, or financial product
+            does not guarantee future results or returns. Keep in mind that while diversification may
+            help spread risk it does not assure a profit, or protect against loss, in a down market.
+            There is always the potential of losing money when you invest in securities, or other
+            financial products. Investors should consider their investment objectives and risks
+            carefully before investing.</p>
+          <p>There are risks unique to automated trading algorithms that you should know about and plan
+            for. You should setup a method or system of continuous monitoring or alerting to let you
+            know if there is a mechanical failure, such as connectivity issues, power loss, a computer
+            crash, or system quirk. You should also monitor for instances where your automated trading
+            system experiences anomalies that could result in errant, missing, or duplicated orders. A
+            more complete description of these and other risks can be found in our <a
+              href="https://alpaca.markets/learn/risks-of-automated-trading-systems/"
+              target="_blank">FAQ section.</a></p>
+          <p>Conditional orders may have increased risk as a result of their reliance on trigger processing, market
+            data, and other internal and external systems. Such orders are not sent to the market until specified
+            conditions are met. During that time, issues such as system outages with downstream technologies or third
+            parties may occur. Conditional orders triggering near the market close may fail to execute that day.
+            Furthermore, our executing partner may impose controls on conditional orders to limit erroneous trades
+            triggering downstream orders. Alpaca Securities may not always be made aware of such changes to external
+            controls immediately, which may lead to some conditional orders not being executed. As such, it is important
+            to monitor conditional orders for reasonability. Conditional orders are “Not Held” orders whose execution
+            instructions are on a best efforts basis upon being triggered. Furthermore, conditional orders may be
+            subject to the increased risks of stop orders and market orders outlined above. Given the increased
+            potential risk of using conditional orders, the client agrees that Alpaca Securities cannot be held
+            responsible for losses, damages, or missed opportunity costs associated with market data problems, systems
+            issues, and user error, among other factors. By using conditional orders the client understands and accepts
+            the risks outlined above. Alpaca Securities encourages leveraging the use of Paper accounts to become more
+            comfortable with the intricacies associated with these orders. </p>
+          <p>ETFs can entail risks similar to direct stock ownership, including market, sector, or
+            industry risks. Some ETFs may involve international risk, currency risk, commodity risk,
+            and interest rate risk. Trading prices may not reflect the net asset value of the
+            underlying securities.</p>
+          <p>All accounts are opened as margin accounts. You should know that margin trading involves interest charges
+            and risks, including the
+            potential to lose more than deposited or the need to deposit additional collateral in a
+            falling market. Before using margin, customers must determine whether this type of trading
+            strategy is right for them given their specific investment objectives, experience, risk
+            tolerance, and financial situation. For more information please see <a
+              href="https://files.alpaca.markets/disclosures/library/ETC+Margin+and+Short+Selling+Disclosure+Statement.pdf"
+              target="_blank">Alpaca’s Margin
+              Disclosure Statement</a> and <a
+              href="https://files.alpaca.markets/disclosures/library/ETC+Margin+Account+Agreement.pdf"
+              target="_blank">Margin Agreement.</a> These disclosures contain
+            information on Alpaca’s lending policies, interest charges, and the risks associated with
+            margin accounts.</p>
+          <p>Commission-Free trading means that there are no commission charges for Alpaca self-directed
+            individual cash brokerage accounts that trade U.S. listed securities through an API. <a
+              href="https://alpaca.markets/learn/regulatory-fees/"
+              target="_blank">Relevant SEC and FINRA fees may apply.</a>
+          </p>
+          <p>&copy; 2020 Alpaca Securities LLC. All rights reserved.</p>
+          <p>&copy; 2020 AlpacaDB. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      var modal = document.getElementById('disclosureModal');
+      var comissionsModal = document.getElementById('disclosureComissionsModal')
+      var disclosureExclamation = document.getElementById('openDisclosure')
+      var disclosureComissionExclamation = document.getElementById('disclosureComissionExclamation')
+      if (document.getElementById('disclosureComissionExclamation-alt')) {
+        disclosureComissionExclamation = document.getElementById('disclosureComissionExclamation-alt')
+      }
+
+      // for automatically opening disclosure if user navigates to alpaca.markets/#disclosures
+      function locationDisclosureOpen() {
+        if (window.location.href.indexOf('#disclosures') != -1) {
+          modal.style.display = 'block';
+        }
+      }
+      locationDisclosureOpen();
+      window.onhashchange = locationDisclosureOpen;
+
+      var close = document.getElementById('close')
+      var close2 = document.getElementById('close2')
+
+      disclosureExclamation.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.style.display = 'block';
+      })
+
+      disclosureComissionExclamation && (disclosureComissionExclamation.addEventListener('click', (e) => {
+        e.preventDefault();
+        comissionsModal.style.display = 'block';
+      }))
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+        else if (comissionsModal && event.target == comissionsModal) {
+          comissionsModal.style.display = 'none';
+        }
+      }
+
+      close.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.style.display = 'none';
+        comissionsModal && (comissionsModal.style.display = 'none');
+      })
+
+      close2 && (close2.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.style.display = 'none';
+        comissionsModal && (comissionsModal.style.display = 'none');
+      }))
+
+    })
+  </script>
+
+</footer>
+    <!-- End footer -->
+
+    <!-- The Modal -->
+    <div id="challengeModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"><a href="javascript:void(0);" onClick="closeModal()">&times;</a></span>
+        <div class="ModalChallenge L--MB16">
+          <h3>CHALLENGE BONUS for $5!</h3>
+          <div class="code-box">
+            <code>ymd = {fill_date:'YYYYMMDD'}
+n = Σint(c)^2 for each c in ymd
+x = chr(0x41 + n % 0x1a)</code>
+          </div>
+          <p>
+            If your first trade at Alpaca is on any symbol starting with {x}, <span class="bold">$5</span> is yours.
+          </p>
+          <p>
+            Are you able to find it?
+          </p>
+          <div class="cta-box">
+            <a class="btn" href="https://app.alpaca.markets/signup">Sign up to answer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="updatesModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close"><a href="javascript:void(0);" onClick="closeModal()">&times;</a></span>
+
+        <div class="ModalEarlyAccessSearch js-early-access-panel">
+          
+            <div class="ModalEarlyAccessSearch__Image">
+
+                <img src="/img/email.png" width="160px;">
+                <div class="Text--Body Text--Size16" style="font-weight: bold; line-height: 1.5">
+                  ANNOUNCEMENTS
+                  <br>
+                  FROM ALPACA
+                  <br><br>
+
+              </div>
+              <div class="Text--Body Text--Size16" style='width: 90%; margin: 0 auto'>
+                Keep me updated with new offerings and feature announcements from Alpaca.
+              </div>
+                <!-- <div class="Text--Body Text--Size16" style="font-weight: bold; line-height: 1.5">
+                    ANNOUNCEMENTS
+                    <br>
+                    FROM ALPACA
+                </div>
+                <div class="Text--Heading1 Color--Sunset Text--Size22 L--MV16" style="line-height: 1.5; font-family:Gilroy-ExtraBold; font-size:20px;">
+                  Keep me updated with new offerings and feature announcements from Alpaca.
+              </div> -->
+            </div>
+            <div class="ModalEarlyAccessSearch__Text L--PT16">
+
+                <div id="mc_embed_signup" class="form-format" style="max-width: 280px;">
+                    <form action="https://alpaca.us3.list-manage.com/subscribe/post?u=86b78f289c915859b5e3a75d4&amp;id=78129e10e7&SIGNUP=Homepage" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div class="mc-field-group">
+                            <label style="font-weight: normal; font-size: 12px;" for="mce-EMAIL">E-mail Address  <span class="asterisk">*</span>
+                            <input id="mce-EMAIL" class="u-full-width required email" type="email" placeholder="Your e-mail" name="MERGE0">
+                          </label>
+                            <label style="font-weight: normal; font-size: 12px;" for="mce-FIRSTNAME">First Name<span class="asterisk">*</span></label>
+                            <input id="mce-FIRSTNAME" class="u-full-width required" type="text" placeholder="Your first name" name="MERGE1">
+                            <label style="font-weight: normal; font-size: 12px;" for="mce-LASTNAME">Last Name<span class="asterisk">*</span></label>
+                            <input id="mce-LASTNAME" class="u-full-width required" type="text" placeholder="Your last name" name="MERGE2">
+                            <label style="font-weight: normal; font-size: 12px;" for="mce-COUNTRY">Country<span class="asterisk"></span></label>
+                            <input id="mce-COUNTRY" class="u-full-width" type="text" placeholder="Your country" name="MERGE5">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                        <!-- but it causes problems for browsers with auto-fill, which is oh so many -->
+                        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_86b78f289c915859b5e3a75d4_78129e10e7" tabindex="-1" value=""></div> -->
+                        <div class="clear"><input type="submit" value="Keep me updated" name="subscribe" id="mc-embedded-subscribe" class="btn try__btn e-mail-update-btn u-full-width"></div>
+                        <!--<a class="btn try__btn email-update-btn u-full-width" href="javascript:void(0);" onClick="closeModal()">Keep me updated</a>-->
+                    </form>
+
+                </div>
+
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='SITE';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            </div>
+
+        </div>
+        <a class="Anchor--Dirt L--MT8 alpaca-link" style="font-size: 12px; font-family: Gilroy-Light; text-align: center; width: 100%;" href="https://alpaca.markets/disclosures">
+          Securities offered through Alpaca Securities LLC, https://alpaca.markets/disclosures
+      </a>
+    </div>
+</div>
+    <!-- BEGIN scripts -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js?05e5a8dde93018b6c2260b30c2b2698e"></script>
+    <script>
+      $(document).ready(function () {
+        $('.testimonials__grid').slick({
+          dots: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          prevArrow: $('.testimonials__btn-prev'),
+          nextArrow: $('.testimonials__btn-next')
+        });
+        var modal = document.getElementById('disclosureModal-testimonial');
+        var disclosureExclamation = document.getElementById('openTestimonialDisclosure')
+        var close = document.getElementById('closeTestimonial')
+        disclosureExclamation.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.style.display = 'block';
+        })
+        window.addEventListener('click', function (event) {
+          if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+        })
+
+        close.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.style.display = 'none';
+        })
+
+        AOS.init();
+      });
+    </script>
+    <!-- END scripts -->
+    <!-- Twitter universal website tag code -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+      !function (e, t, n, s, u, a) {
+        e.twq || (s = e.twq = function () {
+          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+          a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+      }(window, document, 'script');
+      // Insert Twitter Pixel ID and Standard Event data below
+      twq('init', 'o0b5r');
+      twq('track', 'PageView');
+    </script>
+    <!-- End Twitter universal website tag code -->
+
+    <script type="text/javascript">
+      // Gallery slider automation
+      // No real good way to stop for mobile because there's no mouseover event.
+      // If using the slider on desktop, that can be used to pause the automation.
+      // For mobile, there's touchstart and I suppose that could pause the automation for some time?
+      // Perhaps stop animation altogether if tapping the area.
+      // Uncomment to enable.
+      // function eventFire(el, etype){
+      //   if (el.fireEvent) {
+      //     el.fireEvent('on' + etype);
+      //   } else {
+      //     var evObj = document.createEvent('Events');
+      //     evObj.initEvent(etype, true, false);
+      //     el.dispatchEvent(evObj);
+      //   }
+      // }
+      // var currentItem = '1';
+      // setInterval(function() {
+      //   if (currentItem === '1') {
+      //     eventFire(document.getElementById('gallery-item-'+currentItem), 'click');
+      //     currentItem = '2';
+      //   } else {
+      //     eventFire(document.getElementById('gallery-item-'+currentItem), 'click');
+      //     currentItem = '1';
+      //   }
+      // }, 12000);
+
+      // Small cookies helper https://github.com/js-cookie/js-cookie
+      !function (e) { var n = !1; if ("function" == typeof define && define.amd && (define(e), n = !0), "object" == typeof exports && (module.exports = e(), n = !0), !n) { var o = window.Cookies, t = window.Cookies = e(); t.noConflict = function () { return window.Cookies = o, t } } }(function () { function g() { for (var e = 0, n = {}; e < arguments.length; e++) { var o = arguments[e]; for (var t in o) n[t] = o[t] } return n } return function e(l) { function C(e, n, o) { var t; if ("undefined" != typeof document) { if (1 < arguments.length) { if ("number" == typeof (o = g({ path: "/" }, C.defaults, o)).expires) { var r = new Date; r.setMilliseconds(r.getMilliseconds() + 864e5 * o.expires), o.expires = r } o.expires = o.expires ? o.expires.toUTCString() : ""; try { t = JSON.stringify(n), /^[\{\[]/.test(t) && (n = t) } catch (e) { } n = l.write ? l.write(n, e) : encodeURIComponent(String(n)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent), e = (e = (e = encodeURIComponent(String(e))).replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent)).replace(/[\(\)]/g, escape); var i = ""; for (var c in o) o[c] && (i += "; " + c, !0 !== o[c] && (i += "=" + o[c])); return document.cookie = e + "=" + n + i } e || (t = {}); for (var a = document.cookie ? document.cookie.split("; ") : [], s = /(%[0-9A-Z]{2})+/g, f = 0; f < a.length; f++) { var p = a[f].split("="), d = p.slice(1).join("="); this.json || '"' !== d.charAt(0) || (d = d.slice(1, -1)); try { var u = p[0].replace(s, decodeURIComponent); if (d = l.read ? l.read(d, u) : l(d, u) || d.replace(s, decodeURIComponent), this.json) try { d = JSON.parse(d) } catch (e) { } if (e === u) { t = d; break } e || (t[u] = d) } catch (e) { } } return t } } return (C.set = C).get = function (e) { return C.call(C, e) }, C.getJSON = function () { return C.apply({ json: !0 }, [].slice.call(arguments)) }, C.defaults = {}, C.remove = function (e, n) { C(e, "", g(n, { expires: -1 })) }, C.withConverter = e, C }(function () { }) });
+      var search = location.search.substring(1);
+      var queryStringValues = {};
+      if (search) {
+        queryStringValues = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}');
+        if (queryStringValues['ref_by']) {
+          Cookies.set('alpaca_ref_by', queryStringValues['ref_by'], { domain: 'alpaca.markets' });
+        }
+        if (queryStringValues['utm_campaign']) {
+          Cookies.set('alpaca_referrer_campaign_name', queryStringValues['utm_campaign'], { domain: 'alpaca.markets' });
+        }
+        if (queryStringValues['utm_medium']) {
+          Cookies.set('alpaca_referrer_campaign_medium', queryStringValues['utm_medium'], { domain: 'alpaca.markets' });
+        }
+        if (queryStringValues['utm_source']) {
+          Cookies.set('alpaca_referrer_campaign_source', queryStringValues['utm_source'], { domain: 'alpaca.markets' });
+        }
+      }
+      if (document.referrer && document.referrer !== '') {
+        var matches = document.referrer.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
+        var refDomain = matches && matches[1];
+        // Don't set self here.
+        if (refDomain && refDomain.lastIndexOf(window.location.host, 0) !== 0) {
+          Cookies.set('alpaca_referrer_url', document.referrer, { domain: 'alpaca.markets' });
+        }
+      }
+
+
+
+      // Subscribe for updates
+      // Get the modal
+      var cmodal = document.getElementById('challengeModal');
+      if (/challenge2019/.test(location.search)) {
+        cmodal.style.display = "block"
+      }
+      var modal = document.getElementById('updatesModal');
+      function validEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+      }
+
+      function closeModal() {
+        $('.modal').css('display', 'none');
+        var domain = /localhost/.test(location.hostname) ? "localhost" : "alpaca.markets";
+        var ck = "apcapopdone=1;";
+        if (/alpaca.markets$/.test(location.hostname)) {
+          ck += "domain=alpaca.markets;"
+        }
+        ck += "path=/;max-age=" + (60 * 60 * 24 * 14) + ";"
+        document.cookie = ck;
+      }
+
+      function popupDone() {
+        return /apcapopdone=1/.test(document.cookie) || /apcasignedup=1/.test(document.cookie);
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if ($(event.target).hasClass('modal')) {
+          closeModal(modal);
+        }
+      }
+
+      // document.body.addEventListener('mouseout', function (e) {
+      //   var from = e.relatedTarget || e.toElement;
+      //   if (!from || from.nodeName == "HTML") {
+      //     // stop your drag event here
+      //     // for now we can just use an alert
+      //     if (!popupDone()) {
+      //       modal.style.display = "block";
+      //     }
+      //   }
+      // });
+
+    </script>
+    <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/zxjltkct'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();</script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://alpaca.markets",
+      "logo": "https://s3.amazonaws.com/marketing.alpaca.markets/social/logo_190.png",
+      "name": "AlpacaDB, Inc.",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "info@alpaca.markets",
+          "url": "https://docs.alpaca.markets",
+          "contactType": "technical support",
+          "availableLanguage": "English"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-650-489-2017",
+          "contactType": "customer service",
+          "areaServed": "US"
+        }
+      ],
+      "sameAs": [
+      "http://www.facebook.com/alpacahq",
+      "https://twitter.com/alpacahq",
+      "https://www.linkedin.com/company/alpacadb-inc-"
+      ]
+    }
+  </script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebAPI",
+      "name": "Alpaca API",
+      "description": "Alpaca is a modern platform for trading. Alpaca's API is the interface for your trading algorithms, bots, or applications to communicate with Alpaca's brokerage and other services.",
+      "documentation": "https://docs.alpaca.markets",
+      "provider": {
+        "@type": "Organization",
+        "name": "AlpacaDB, Inc."
+      }
+    }
+  </script>
+</body>
+
+</html>
