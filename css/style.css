@@ -7571,3 +7571,24 @@ body.challenge2019 .section.terms p, body.challenge2019 .section.terms li {
   /* margin: 0 auto; */
   font-size: 24px;
 }
+
+.slink {
+  padding: 0px 50px;
+  text-decoration: none;
+}
+.slink:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background:#3498DB;
+  transition: width 0.3s ease;
+  left: 0;
+}
+.slink:hover {
+  color:#3498DB;
+  transition: all 0.3s ease-in-out
+}
+/* .slink:hover:after {
+  opacity: 1;
+  width: 100%;
+} */
