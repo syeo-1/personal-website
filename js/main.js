@@ -39,7 +39,7 @@
 
         if (windowScrollTop >= top && windowScrollTop <= bottom) {
           var bgColor = el.css('background-color');
-          console.log(bgColor)
+          // console.log(bgColor)
           if (bgColor == 'rgba(0, 0, 0, 0)' || bgColor == 'rgb(255, 255, 255)') {
             $('.header__top').addClass('override-theme-white');
           } else if (bgColor == 'rgb(0, 0, 0)' || bgColor == 'rgb(23, 21, 21)') {

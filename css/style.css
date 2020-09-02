@@ -2436,7 +2436,12 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
   line-height: 1.2;
 }
 .header__bottom {
+  /* margin: 0 auto; */
   width: 100%;
+  /**/
+  z-index: 1;
+  position: absolute;
+  top: 350px;
 }
 .header__bottom-container {
   position: relative;
@@ -4317,7 +4322,7 @@ ul.documents-list li a:hover {
 }
 
 .broker {
-  background: rgb(214,234,248);
+  background: #AED6F1;
   height: 900px;
 }
 .broker__title {
@@ -7588,7 +7593,24 @@ body.challenge2019 .section.terms p, body.challenge2019 .section.terms li {
   color:#3498DB;
   transition: all 0.3s ease-in-out
 }
+
 /* .slink:hover:after {
-  opacity: 1;
   width: 100%;
+  opacity: 1;
 } */
+#gol {
+  z-index: -1;
+}
+#titlecard {
+  margin: 0 auto;
+  display: table;
+}
+@media (min-width: 1200px) {
+  #titlecardContainer {
+    width: 100%;
+    /* left: 25%; */
+    /* display: table; */
+    max-width: 650px;
+    /* margin: 0 auto; */
+  }
+}

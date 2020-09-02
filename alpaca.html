@@ -94,24 +94,20 @@
 
 <body class="top">
   <!-- Begin header -->
-  <div class="wrapper">
-
-    <div class="animation">
-      <img class="animation__triangle t1" src="img/triangle.png"></img>
-      <img class="animation__triangle t2" src="img/triangle.png"></img>
-      <img class="animation__triangle t3" src="img/triangle.png"></img>
-      <img class="animation__triangle t4" src="img/triangle.png"></img>
-      <img class="animation__triangle t5" src="img/triangle.png"></img>
-      <img class="animation__triangle t6" src="img/triangle.png"></img>
-      <img class="animation__triangle t7" src="img/triangle.png"></img>
-      <img class="animation__triangle t8" src="img/triangle.png"></img>
-      <img class="animation__triangle t9" src="img/triangle.png"></img>
-      <img class="animation__triangle t10" src="img/triangle.png"></img>
-      <img class="animation__triangle t11" src="img/triangle.png"></img>
-      <img class="animation__triangle t12" src="img/triangle.png"></img>
+  <div class="wrapper" id="gol">
+    <img id="bit" src="img/bit.svg" style="display: none">
+    <div id="animation" id="gol">
+      <!-- <canvas></canvas> -->
+      <!-- <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-container">
+            <h1>Life is complicated. Let's make it simpler, together.</h1>
+          </div>
+        </div>
+      </div> -->
     </div>
 
-    <header class="header">
+    <!-- <header class="header">
       
       <div class="header__top base-theme-black">
   <div class="container headercontainer">
@@ -140,28 +136,19 @@
           <nav class="menu">
 
             <a href="/algotrading" class="menu__link">About</a>
-            <!-- <a href="/integrations" class="menu__link">Projects</a> -->
-
-            <!-- <a href="/partnerships" class="menu__link">Work with us</a>
-            <a href="/community" class="menu__link">Community</a>
-
-            <a href="https://alpaca.markets/docs/" class="menu__link">Docs</a>
-            <a href="https://app.alpaca.markets/login" class="menu__link">Log in</a> -->
 
           </nav>
           <a href="https://app.alpaca.markets/signup" class="btn header__menu-btn">Contact</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
       
       <div class="header__bottom">
-        <div class="container">
+        <div class="container" id="titlecardContainer">
           <div class="header__bottom-container">
-            <h1>Life is complicated. Let's make it simpler, together.</h1>
-            <!-- <p>Trade with algorithms, connect with apps, build services — all with commission-free stock trading API</p>
-            <a href="https://app.alpaca.markets/signup" class="btn header__bottom-btn">Sign up for free</a> -->
+            <h1 id="titlecard">Life is complicated. Let's make it simpler, together.</h1>
           </div>
         </div>
       </div>
@@ -192,7 +179,7 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-lg-8 order-1 order-lg-2">
             <h3 class="title broker__title">Hello, World!</h3>
-            <p class="section__desc broker__desc">I am a computer science student at the University of Victoria with interests in web development and data analysis.</p>
+            <p class="section__desc broker__desc">My name is Sean Yeo. I'm a computer science student at the University of Victoria with interests in web development and data analysis.</p>
             <p id="social">
               <a href="" target="_blank" class="slink">Linkedin</a>
               <a href="" target="_blank" class="slink">Github</a>
@@ -215,332 +202,11 @@
       </div>
     </section>
 
-    <!-- <section class="section try">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="try__grid">
-                            <h3 class="title try__title">Built For Makers<br>In Open source & Community</h3>
-                            <p class="try__desc">We truly believe open source changes the financial systems and how we interact with them. Alpaca grows with our community and knowledges we build together.</p>
-                            <div class="try__info">
-                                <div class="try__info__snippet">
-                                    <script type="text/code-snippet">import alpaca_trade_api as tradeapi
-api = tradeapi.REST('AKR09R521SWTPGN5YAUI',
-                    'ijRiw9bHL1HuLpD0k9uxfW020DVJhayK5rpToN5v')
-order = api.submit_order(
-    symbol='ALPACA',
-    qty=15,
-    type='limit',
-    side='buy',
-    limit_price=25.34,
-    time_in_force='day',
-)</script>
-                                </div>
-                                <span class="try__cta">
-                                    <a href="https://app.alpaca.markets/signup" class="btn try__btn">Try API</a>
-                                </span>
-                            </div>
-                            <p class="try__note">Technology and services are offered by AlpacaDB, Inc.<br>Securities are offered through Alpaca Securities LLC </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    <!-- End main -->
-    <!-- Begin footer -->
-    
-    <!-- End footer -->
-
-    <!-- The Modal -->
-    <div id="challengeModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close"><a href="javascript:void(0);" onClick="closeModal()">&times;</a></span>
-        <div class="ModalChallenge L--MB16">
-          <h3>CHALLENGE BONUS for $5!</h3>
-          <div class="code-box">
-            <code>ymd = {fill_date:'YYYYMMDD'}
-n = Σint(c)^2 for each c in ymd
-x = chr(0x41 + n % 0x1a)</code>
-          </div>
-          <p>
-            If your first trade at Alpaca is on any symbol starting with {x}, <span class="bold">$5</span> is yours.
-          </p>
-          <p>
-            Are you able to find it?
-          </p>
-          <div class="cta-box">
-            <a class="btn" href="https://app.alpaca.markets/signup">Sign up to answer</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- The Modal -->
-    <div id="updatesModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close"><a href="javascript:void(0);" onClick="closeModal()">&times;</a></span>
-
-        <div class="ModalEarlyAccessSearch js-early-access-panel">
-          
-            <div class="ModalEarlyAccessSearch__Image">
-
-                <img src="/img/email.png" width="160px;">
-                <div class="Text--Body Text--Size16" style="font-weight: bold; line-height: 1.5">
-                  ANNOUNCEMENTS
-                  <br>
-                  FROM ALPACA
-                  <br><br>
-
-              </div>
-              <div class="Text--Body Text--Size16" style='width: 90%; margin: 0 auto'>
-                Keep me updated with new offerings and feature announcements from Alpaca.
-              </div>
-                <!-- <div class="Text--Body Text--Size16" style="font-weight: bold; line-height: 1.5">
-                    ANNOUNCEMENTS
-                    <br>
-                    FROM ALPACA
-                </div>
-                <div class="Text--Heading1 Color--Sunset Text--Size22 L--MV16" style="line-height: 1.5; font-family:Gilroy-ExtraBold; font-size:20px;">
-                  Keep me updated with new offerings and feature announcements from Alpaca.
-              </div> -->
-            </div>
-            <div class="ModalEarlyAccessSearch__Text L--PT16">
-
-                <div id="mc_embed_signup" class="form-format" style="max-width: 280px;">
-                    <form action="https://alpaca.us3.list-manage.com/subscribe/post?u=86b78f289c915859b5e3a75d4&amp;id=78129e10e7&SIGNUP=Homepage" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div class="mc-field-group">
-                            <label style="font-weight: normal; font-size: 12px;" for="mce-EMAIL">E-mail Address  <span class="asterisk">*</span>
-                            <input id="mce-EMAIL" class="u-full-width required email" type="email" placeholder="Your e-mail" name="MERGE0">
-                          </label>
-                            <label style="font-weight: normal; font-size: 12px;" for="mce-FIRSTNAME">First Name<span class="asterisk">*</span></label>
-                            <input id="mce-FIRSTNAME" class="u-full-width required" type="text" placeholder="Your first name" name="MERGE1">
-                            <label style="font-weight: normal; font-size: 12px;" for="mce-LASTNAME">Last Name<span class="asterisk">*</span></label>
-                            <input id="mce-LASTNAME" class="u-full-width required" type="text" placeholder="Your last name" name="MERGE2">
-                            <label style="font-weight: normal; font-size: 12px;" for="mce-COUNTRY">Country<span class="asterisk"></span></label>
-                            <input id="mce-COUNTRY" class="u-full-width" type="text" placeholder="Your country" name="MERGE5">
-                        </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
-                        <!-- but it causes problems for browsers with auto-fill, which is oh so many -->
-                        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_86b78f289c915859b5e3a75d4_78129e10e7" tabindex="-1" value=""></div> -->
-                        <div class="clear"><input type="submit" value="Keep me updated" name="subscribe" id="mc-embedded-subscribe" class="btn try__btn e-mail-update-btn u-full-width"></div>
-                        <!--<a class="btn try__btn email-update-btn u-full-width" href="javascript:void(0);" onClick="closeModal()">Keep me updated</a>-->
-                    </form>
-
-                </div>
-
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='SITE';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-            </div>
-
-        </div>
-        <a class="Anchor--Dirt L--MT8 alpaca-link" style="font-size: 12px; font-family: Gilroy-Light; text-align: center; width: 100%;" href="https://alpaca.markets/disclosures">
-          Securities offered through Alpaca Securities LLC, https://alpaca.markets/disclosures
-      </a>
-    </div>
-</div>
     <!-- BEGIN scripts -->
     <script src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/gameoflife.js"></script>
     <script src="js/main.js?05e5a8dde93018b6c2260b30c2b2698e"></script>
-    <script>
-      $(document).ready(function () {
-        $('.testimonials__grid').slick({
-          dots: true,
-          arrows: true,
-          autoplay: true,
-          autoplaySpeed: 5000,
-          prevArrow: $('.testimonials__btn-prev'),
-          nextArrow: $('.testimonials__btn-next')
-        });
-        var modal = document.getElementById('disclosureModal-testimonial');
-        var disclosureExclamation = document.getElementById('openTestimonialDisclosure')
-        var close = document.getElementById('closeTestimonial')
-        disclosureExclamation.addEventListener('click', (e) => {
-          e.preventDefault();
-          modal.style.display = 'block';
-        })
-        window.addEventListener('click', function (event) {
-          if (event.target == modal) {
-            modal.style.display = 'none';
-          }
-        })
 
-        close.addEventListener('click', (e) => {
-          e.preventDefault();
-          modal.style.display = 'none';
-        })
-
-        AOS.init();
-      });
-    </script>
-    <!-- END scripts -->
-    <!-- Twitter universal website tag code -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script>
-      !function (e, t, n, s, u, a) {
-        e.twq || (s = e.twq = function () {
-          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
-        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
-          a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
-      }(window, document, 'script');
-      // Insert Twitter Pixel ID and Standard Event data below
-      twq('init', 'o0b5r');
-      twq('track', 'PageView');
-    </script>
-    <!-- End Twitter universal website tag code -->
-
-    <script type="text/javascript">
-      // Gallery slider automation
-      // No real good way to stop for mobile because there's no mouseover event.
-      // If using the slider on desktop, that can be used to pause the automation.
-      // For mobile, there's touchstart and I suppose that could pause the automation for some time?
-      // Perhaps stop animation altogether if tapping the area.
-      // Uncomment to enable.
-      // function eventFire(el, etype){
-      //   if (el.fireEvent) {
-      //     el.fireEvent('on' + etype);
-      //   } else {
-      //     var evObj = document.createEvent('Events');
-      //     evObj.initEvent(etype, true, false);
-      //     el.dispatchEvent(evObj);
-      //   }
-      // }
-      // var currentItem = '1';
-      // setInterval(function() {
-      //   if (currentItem === '1') {
-      //     eventFire(document.getElementById('gallery-item-'+currentItem), 'click');
-      //     currentItem = '2';
-      //   } else {
-      //     eventFire(document.getElementById('gallery-item-'+currentItem), 'click');
-      //     currentItem = '1';
-      //   }
-      // }, 12000);
-
-      // Small cookies helper https://github.com/js-cookie/js-cookie
-      !function (e) { var n = !1; if ("function" == typeof define && define.amd && (define(e), n = !0), "object" == typeof exports && (module.exports = e(), n = !0), !n) { var o = window.Cookies, t = window.Cookies = e(); t.noConflict = function () { return window.Cookies = o, t } } }(function () { function g() { for (var e = 0, n = {}; e < arguments.length; e++) { var o = arguments[e]; for (var t in o) n[t] = o[t] } return n } return function e(l) { function C(e, n, o) { var t; if ("undefined" != typeof document) { if (1 < arguments.length) { if ("number" == typeof (o = g({ path: "/" }, C.defaults, o)).expires) { var r = new Date; r.setMilliseconds(r.getMilliseconds() + 864e5 * o.expires), o.expires = r } o.expires = o.expires ? o.expires.toUTCString() : ""; try { t = JSON.stringify(n), /^[\{\[]/.test(t) && (n = t) } catch (e) { } n = l.write ? l.write(n, e) : encodeURIComponent(String(n)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent), e = (e = (e = encodeURIComponent(String(e))).replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent)).replace(/[\(\)]/g, escape); var i = ""; for (var c in o) o[c] && (i += "; " + c, !0 !== o[c] && (i += "=" + o[c])); return document.cookie = e + "=" + n + i } e || (t = {}); for (var a = document.cookie ? document.cookie.split("; ") : [], s = /(%[0-9A-Z]{2})+/g, f = 0; f < a.length; f++) { var p = a[f].split("="), d = p.slice(1).join("="); this.json || '"' !== d.charAt(0) || (d = d.slice(1, -1)); try { var u = p[0].replace(s, decodeURIComponent); if (d = l.read ? l.read(d, u) : l(d, u) || d.replace(s, decodeURIComponent), this.json) try { d = JSON.parse(d) } catch (e) { } if (e === u) { t = d; break } e || (t[u] = d) } catch (e) { } } return t } } return (C.set = C).get = function (e) { return C.call(C, e) }, C.getJSON = function () { return C.apply({ json: !0 }, [].slice.call(arguments)) }, C.defaults = {}, C.remove = function (e, n) { C(e, "", g(n, { expires: -1 })) }, C.withConverter = e, C }(function () { }) });
-      var search = location.search.substring(1);
-      var queryStringValues = {};
-      if (search) {
-        queryStringValues = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}');
-        if (queryStringValues['ref_by']) {
-          Cookies.set('alpaca_ref_by', queryStringValues['ref_by'], { domain: 'alpaca.markets' });
-        }
-        if (queryStringValues['utm_campaign']) {
-          Cookies.set('alpaca_referrer_campaign_name', queryStringValues['utm_campaign'], { domain: 'alpaca.markets' });
-        }
-        if (queryStringValues['utm_medium']) {
-          Cookies.set('alpaca_referrer_campaign_medium', queryStringValues['utm_medium'], { domain: 'alpaca.markets' });
-        }
-        if (queryStringValues['utm_source']) {
-          Cookies.set('alpaca_referrer_campaign_source', queryStringValues['utm_source'], { domain: 'alpaca.markets' });
-        }
-      }
-      if (document.referrer && document.referrer !== '') {
-        var matches = document.referrer.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
-        var refDomain = matches && matches[1];
-        // Don't set self here.
-        if (refDomain && refDomain.lastIndexOf(window.location.host, 0) !== 0) {
-          Cookies.set('alpaca_referrer_url', document.referrer, { domain: 'alpaca.markets' });
-        }
-      }
-
-
-
-      // Subscribe for updates
-      // Get the modal
-      var cmodal = document.getElementById('challengeModal');
-      if (/challenge2019/.test(location.search)) {
-        cmodal.style.display = "block"
-      }
-      var modal = document.getElementById('updatesModal');
-      function validEmail(email) {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-      }
-
-      function closeModal() {
-        $('.modal').css('display', 'none');
-        var domain = /localhost/.test(location.hostname) ? "localhost" : "alpaca.markets";
-        var ck = "apcapopdone=1;";
-        if (/alpaca.markets$/.test(location.hostname)) {
-          ck += "domain=alpaca.markets;"
-        }
-        ck += "path=/;max-age=" + (60 * 60 * 24 * 14) + ";"
-        document.cookie = ck;
-      }
-
-      function popupDone() {
-        return /apcapopdone=1/.test(document.cookie) || /apcasignedup=1/.test(document.cookie);
-      }
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if ($(event.target).hasClass('modal')) {
-          closeModal(modal);
-        }
-      }
-
-      // document.body.addEventListener('mouseout', function (e) {
-      //   var from = e.relatedTarget || e.toElement;
-      //   if (!from || from.nodeName == "HTML") {
-      //     // stop your drag event here
-      //     // for now we can just use an alert
-      //     if (!popupDone()) {
-      //       modal.style.display = "block";
-      //     }
-      //   }
-      // });
-
-    </script>
-    <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/zxjltkct'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();</script>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "https://alpaca.markets",
-      "logo": "https://s3.amazonaws.com/marketing.alpaca.markets/social/logo_190.png",
-      "name": "AlpacaDB, Inc.",
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "email": "info@alpaca.markets",
-          "url": "https://docs.alpaca.markets",
-          "contactType": "technical support",
-          "availableLanguage": "English"
-        },
-        {
-          "@type": "ContactPoint",
-          "telephone": "+1-650-489-2017",
-          "contactType": "customer service",
-          "areaServed": "US"
-        }
-      ],
-      "sameAs": [
-      "http://www.facebook.com/alpacahq",
-      "https://twitter.com/alpacahq",
-      "https://www.linkedin.com/company/alpacadb-inc-"
-      ]
-    }
-  </script>
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebAPI",
-      "name": "Alpaca API",
-      "description": "Alpaca is a modern platform for trading. Alpaca's API is the interface for your trading algorithms, bots, or applications to communicate with Alpaca's brokerage and other services.",
-      "documentation": "https://docs.alpaca.markets",
-      "provider": {
-        "@type": "Organization",
-        "name": "AlpacaDB, Inc."
-      }
-    }
-  </script>
 </body>
 
 </html>
