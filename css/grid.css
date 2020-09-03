@@ -11,6 +11,7 @@ html {
   -ms-overflow-style: scrollbar; }
 
 .container {
+  /* top: 50%; this line was added in */
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;

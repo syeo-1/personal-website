@@ -2439,9 +2439,14 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
   /* margin: 0 auto; */
   width: 100%;
   /**/
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /**/
   z-index: 1;
   position: absolute;
-  top: 350px;
+  /* top: 350px; */
+  top: 30%;
 }
 .header__bottom-container {
   position: relative;
@@ -7612,5 +7617,17 @@ body.challenge2019 .section.terms p, body.challenge2019 .section.terms li {
     /* display: table; */
     max-width: 650px;
     /* margin: 0 auto; */
+  }
+}
+@media (max-width: 768px) {
+  #social {
+    /* font-size: 18px; */
+  }
+  .slink {
+    padding: 20px 0px;
+    display: grid;
+  }
+  .broker {
+    height: 700px;
   }
 }

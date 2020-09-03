@@ -187,7 +187,7 @@ var GameOfLife = function() {
             display(newArr);
             arr = newArr;
         }
-    }, 100);
+    }, 150);
 
 };
 GameOfLife()
