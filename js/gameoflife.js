@@ -1,5 +1,5 @@
 function setCanvasSize(canvas, width, height) {
-    console.log(this)
+    // console.log(this)
     canvas.style.width = width + "px";
     canvas.style.height = height + "px";
 
@@ -32,7 +32,7 @@ function setCanvasSize(canvas, width, height) {
 }
 
 function Canvas(elem) {
-    console.log(this)
+    // console.log(this)
     var canvas = document.createElement('canvas');
     elem.appendChild(canvas);
     var width = elem.offsetWidth;
@@ -43,7 +43,7 @@ function Canvas(elem) {
 }
 
 var GameOfLife = function() {
-    console.log("hello")
+    // console.log("hello")
     var canvas = Canvas(document.getElementById('gol'))
 
     var pixelSize = 40;

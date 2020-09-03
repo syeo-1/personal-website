@@ -4344,7 +4344,7 @@ ul.documents-list li a:hover {
 .broker__desc {
   opacity: 0.9;
   font-family: Carnas;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -7566,7 +7566,7 @@ body.challenge2019 .section.terms p, body.challenge2019 .section.terms li {
 }
 
 /*# sourceMappingURL=style.css.map */
-/* my stuff below*/
+/* below */
 
 #myName {
   font-size: 32px;
