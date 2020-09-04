@@ -1848,7 +1848,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
  */
 h1, h5, h4, h3, h2 {
   margin: 0;
-  font-family: Carnas;
+  /* font-family: sans-serif; */
+  font-family: sans-serif;
   font-size: 46px;
   font-weight: 500;
   font-stretch: normal;
@@ -1917,7 +1918,8 @@ p {
 }
 
 body {
-  font-family: "Carnas";
+  /* font-family: "sans-serif"; */
+  font-family: sans-serif;
   font-weight: 500;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -1931,7 +1933,7 @@ body {
 }
 
 button, textarea, input, select {
-  font-family: "Carnas";
+  font-family: "sans-serif";
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1950,7 +1952,7 @@ select {
 
 input {
   cursor: text;
-  font-family: "Carnas";
+  font-family: "sans-serif";
   font-size: 15px;
   color: #303030;
 }
@@ -2089,7 +2091,7 @@ table {
 }
 .menu__link {
   text-decoration: none;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -2105,7 +2107,7 @@ table {
 }
 .menu__title {
   margin: 0;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -2468,7 +2470,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
 .header__bottom-container h1, .header__bottom-container h2, .header__bottom-container h3, .header__bottom-container h4, .header__bottom-container h5 {
   max-width: 452px;
   min-height: 56px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 46px;
   font-weight: 500;
   font-stretch: normal;
@@ -2488,7 +2490,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
   margin: 0 auto;
   max-width: 310px;
   min-height: 66px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -2505,7 +2507,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
   width: 245px;
   border-radius: 4px;
   background-color: #3498db;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
@@ -2541,7 +2543,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
 .header__algo h1, .header__algo h2, .header__algo h3, .header__algo h4, .header__algo h5 {
   width: 800px;
   max-width: 100%;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 46px;
   font-weight: 500;
   font-stretch: normal;
@@ -2568,7 +2570,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
   margin: 0 auto;
   width: 520px;
   max-width: 100%;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -2749,7 +2751,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
 
 #disclosures {
   margin-top: 70px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 10px;
   font-weight: 300;
   font-stretch: normal;
@@ -2761,7 +2763,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
 }
 #disclosures .disclosureLogo {
   margin-bottom: 20px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
@@ -2790,7 +2792,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
 
 .disclosureContainer {
   cursor: pointer;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 10px;
   font-weight: 300;
   font-stretch: normal;
@@ -2865,7 +2867,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
   width: 543px;
   height: 272px;
   background-color: #171515;
-  font-family: Carnas;
+  font-family: sans-serif;
   /*
   @media @smartphones, @tablets {
     display: none;
@@ -2920,7 +2922,7 @@ header .header__top.base-theme-black .header__menu-btn:hover, header .header__to
   min-width: 50px;
   padding-right: 10px;
   padding-left: 10px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: rgba(27, 31, 35, 0.3);
@@ -3300,7 +3302,7 @@ table.code-snippet-box {
   text-align: left;
   margin: 0 0;
   margin-bottom: 10px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 30px;
   font-weight: 500;
   font-stretch: normal;
@@ -3310,7 +3312,7 @@ table.code-snippet-box {
   color: #303030;
 }
 .modal-content p {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 12px;
   font-weight: 300;
   font-stretch: normal;
@@ -3728,7 +3730,7 @@ ul.documents-list li a:hover {
 .foursquare-square-content h3 {
   position: absolute;
   bottom: 5%;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 28px;
   font-weight: 500;
   font-stretch: normal;
@@ -3758,7 +3760,7 @@ ul.documents-list li a:hover {
   align-items: center;
 }
 .foursquare-square-algo-content h3 {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -3770,7 +3772,7 @@ ul.documents-list li a:hover {
   max-width: 300px;
 }
 .foursquare-square-algo-content p {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -3825,7 +3827,7 @@ ul.documents-list li a:hover {
   transform: translateY(-50%) scale(0.5);
 }
 .benefit__title {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -3836,7 +3838,7 @@ ul.documents-list li a:hover {
 }
 .benefit__desc {
   width: 230px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -4333,7 +4335,7 @@ ul.documents-list li a:hover {
 .broker__title {
   opacity: 0.9;
   color: #000000;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 46px;
   font-weight: 500;
   font-stretch: normal;
@@ -4343,7 +4345,7 @@ ul.documents-list li a:hover {
 }
 .broker__desc {
   opacity: 0.9;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 32px;
   font-weight: 300;
   font-stretch: normal;
@@ -4364,7 +4366,7 @@ ul.documents-list li a:hover {
   background-color: #fbfbfb;
 }
 .investors p {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -4645,7 +4647,7 @@ section.disclosure-section #disclosureComissionExclamation a {
 }
 .try p {
   margin-top: 30px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 12px;
   font-weight: 300;
   font-stretch: normal;
@@ -4660,7 +4662,7 @@ section.disclosure-section #disclosureComissionExclamation a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 12px;
   font-weight: 300;
   font-stretch: normal;
@@ -5065,7 +5067,7 @@ body.algotrading .chartOverlay {
   align-items: center;
 }
 .foursquarealgo-square-algo-content h3 {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px !important;
   font-weight: bold;
   font-stretch: normal;
@@ -5077,7 +5079,7 @@ body.algotrading .chartOverlay {
   max-width: 300px;
 }
 .foursquarealgo-square-algo-content p {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -5228,7 +5230,7 @@ body.integrations .integrations-container .card:hover .arrow {
 }
 body.integrations .integrations-container .card p {
   width: 220px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -5314,7 +5316,7 @@ body.community .header__community svg {
 }
 body.community .header__community p {
   max-width: 600px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -5344,7 +5346,7 @@ body.community .community-container .card:hover .arrow {
 }
 body.community .community-container .card p {
   width: 220px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -5451,7 +5453,7 @@ body.partnerships .partnerships-container .card:hover .arrow {
 }
 body.partnerships .partnerships-container .card p {
   width: 220px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -5539,7 +5541,7 @@ body.partnerships .partnerships-container .card .arrow {
   align-items: center;
 }
 .foursquarepartner-square-partner-content h3 {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px !important;
   font-weight: bold;
   font-stretch: normal;
@@ -5551,7 +5553,7 @@ body.partnerships .partnerships-container .card .arrow {
   max-width: 300px;
 }
 .foursquarepartner-square-partner-content p {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -5616,7 +5618,7 @@ body.partnerships .partnerships-container .card .arrow {
 .partnerships__bottom-container h1, .partnerships__bottom-container h2, .partnerships__bottom-container h3, .partnerships__bottom-container h4, .partnerships__bottom-container h5 {
   max-width: 452px;
   min-height: 56px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 46px;
   font-weight: 500;
   font-stretch: normal;
@@ -5635,7 +5637,7 @@ body.partnerships .partnerships-container .card .arrow {
   margin: 0 auto;
   max-width: 310px;
   min-height: 66px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -6351,7 +6353,7 @@ body.tradingview .intro-text {
   opacity: 1;
 }
 body.tradingview .intro-text p {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -6461,7 +6463,7 @@ body.tradingview .section .disclaimer {
 }
 body.tradingview .section .disclaimer div {
   text-align: center;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 10px;
   font-weight: 300;
   font-stretch: normal;
@@ -6566,7 +6568,7 @@ body.tradingview .instructions {
 }
 body.tradingview .instructions h1, body.tradingview .instructions h2, body.tradingview .instructions h3, body.tradingview .instructions h4, body.tradingview .instructions h5 {
   text-align: left;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 40px;
   font-weight: 500;
   font-stretch: normal;
@@ -6595,7 +6597,7 @@ body.tradingview .instructions h1.number, body.tradingview .instructions h2.numb
   }
 }
 body.tradingview .instructions p.instructions-desc {
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -6659,7 +6661,7 @@ body.tradingview .instructions .step p {
   font-size: 20px;
   max-width: 413px;
   min-height: 66px;
-  font-family: Carnas;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
