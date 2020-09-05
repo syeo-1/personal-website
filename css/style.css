@@ -7607,6 +7607,8 @@ body.challenge2019 .section.terms p, body.challenge2019 .section.terms li {
 } */
 #gol {
   z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 #titlecard {
   margin: 0 auto;

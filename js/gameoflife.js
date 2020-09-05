@@ -153,7 +153,7 @@ var GameOfLife = function() {
             e = e.changedTouches[0];
         }
 
-        var x = e.clientX;
+        var x = e.clientX+window.scrollX;
         var y = e.clientY+window.scrollY;
 
         // console.log(y)
